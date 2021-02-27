@@ -1,5 +1,12 @@
 %% load 
 clear all
+seed = randperm(length(YTrain));
+XTrain = XTrain(seed,:);
+YTrain = YTrain(seed);
+
+
+%%
+
 filenameImagesTrain = 'train-images-idx3-ubyte';
 filenameLabelsTrain = 'train-labels-idx1-ubyte';
 filenameImagesTest = 't10k-images-idx3-ubyte';
