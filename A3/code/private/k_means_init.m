@@ -1,7 +1,7 @@
 function centorid = k_means_init(X, k,initializer)
 [d,n] = size(X);
-if n>k
-    disp('Number of cluster should smaller than the input examples!')
+if d<k
+    disp('Number of cluster should smaller than the number of input examples!')
 end
 centorid = zeros(k,n);
 
